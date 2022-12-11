@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  
+</head>
+
+<body>
+  
+  <form name="calculator" id="calculator">
+    Number 1: <input type="text" name="num1" placeholder="Enter a number.">
+    Number 2: <input type="text" name="num2" placeholder="Enter a number.">
+    Result: <input type="text" name="result">
+    
+    <input type="button" class="button-34" value="add" onclick="addition();">
+    <input type="button" value="sub" onclick="substraction();">
+    <input type="button" value="div" onclick="division();">
+    <input type="button" value="mul" onclick="multiplication();">
+    <button class="button-34" role="button">Button 34</button>
+  </form>
+  <script type="text/javascript">
+    function addition() {
+      var a = Number(document.calculator.num1.value);
+      var b = Number(document.calculator.num2.value);
+      var sum = a + b;
+      document.calculator.result.value = sum;
+      
+    }
+  function substraction(){
+      var a = Number(document.calculator.num1.value);
+      var b = Number(document.calculator.num2.value);
+      var sub = a - b;
+      document.calculator.result.value = sub;
+    
+    
+  }
+    function division(){
+      var a = Number(document.calculator.num1.value);
+      var b = Number(document.calculator.num2.value);
+      var div = a / b;
+      document.calculator.result.value = div;
+    
+    
+  }
+    function multiplication(){
+      var a = Number(document.calculator.num1.value);
+      var b = Number(document.calculator.num2.value);
+      var mul = a * b;
+      document.calculator.result.value = mul;
+    
+    
+  }
+  </script>
+
+  
+</body>
+
+</html>
